@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WMT_MS_Capabilities version="1.1.1" updateSequence="63258">
+	<Service>
+		<Name>OGC:WMS</Name>
+		<Title>CSR Web Map Service</Title>
+		<Abstract>Compliant WMS Response</Abstract>
+		<KeywordList>
+			<Keyword>WFS</Keyword>
+			<Keyword>WMS</Keyword>
+			<Keyword>GEOSERVER</Keyword>
+		</KeywordList>
+		<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoserver.sourceforge.net/html/index.php"></OnlineResource>
+		<ContactInformation>
+			<ContactPersonPrimary>
+				<ContactPerson>GITHUB owner</ContactPerson>
+				<ContactOrganization>GITHUB owner</ContactOrganization>
+			</ContactPersonPrimary>
+			<ContactPosition>Chief geographer</ContactPosition>
+			<ContactAddress>
+				<AddressType>Work</AddressType>
+				<Address></Address>
+				<City>Alexandria</City>
+				<StateOrProvince></StateOrProvince>
+				<PostCode></PostCode>
+				<Country>Egypt</Country>
+			</ContactAddress>
+			<ContactVoiceTelephone></ContactVoiceTelephone>
+			<ContactFacsimileTelephone></ContactFacsimileTelephone>
+			<ContactElectronicMailAddress>claudius.ptolomaeus@gmail.com</ContactElectronicMailAddress>
+		</ContactInformation>
+		<Fees>NONE</Fees>
+		<AccessConstraints>NONE</AccessConstraints>
+	</Service>
+	<Capability>
+		<Request>
+			<GetCapabilities>
+				<Format>application/vnd.ogc.wms_xml</Format>
+				<DCPType>
+					<HTTP>
+						<Get>
+							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://maps.csr.ufmg.br:80/geoserver/wms?SERVICE=WMS&amp;"></OnlineResource>
+						</Get>
+						<Post>
+							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://maps.csr.ufmg.br:80/geoserver/wms?SERVICE=WMS&amp;"></OnlineResource>
+						</Post>
+					</HTTP>
+				</DCPType>
+			</GetCapabilities>
+			<GetMap>
+				<Format>image/png</Format>
+				<DCPType>
+					<HTTP>
+						<Get>
+							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://maps.csr.ufmg.br:80/geoserver/wms?SERVICE=WMS&amp;"></OnlineResource>
+						</Get>
+					</HTTP>
+				</DCPType>
+			</GetMap>
+			<GetFeatureInfo>
+				<Format>text/plain</Format>
+				<Format>application/vnd.ogc.gml</Format>
+				<Format>application/vnd.ogc.gml/3.1.1</Format>
+				<Format>text/html</Format>
+				<Format>application/json</Format>
+				<DCPType>
+					<HTTP>
+						<Get>
+							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://maps.csr.ufmg.br:80/geoserver/wms?SERVICE=WMS&amp;"></OnlineResource>
+						</Get>
+						<Post>
+							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://maps.csr.ufmg.br:80/geoserver/wms?SERVICE=WMS&amp;"></OnlineResource>
+						</Post>
+					</HTTP>
+				</DCPType>
+			</GetFeatureInfo>
+			<DescribeLayer>
+				<Format>application/vnd.ogc.wms_xml</Format>
+				<DCPType>
+					<HTTP>
+						<Get>
+							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://maps.csr.ufmg.br:80/geoserver/wms?SERVICE=WMS&amp;"></OnlineResource>
+						</Get>
+					</HTTP>
+				</DCPType>
+			</DescribeLayer>
+			<GetLegendGraphic>
+				<Format>image/png</Format>
+				<DCPType>
+					<HTTP>
+						<Get>
+							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://maps.csr.ufmg.br:80/geoserver/wms?SERVICE=WMS&amp;"></OnlineResource>
+						</Get>
+					</HTTP>
+				</DCPType>
+			</GetLegendGraphic>
+			<GetStyles>
+				<Format>application/vnd.ogc.sld+xml</Format>
+				<DCPType>
+					<HTTP>
+						<Get>
+							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://maps.csr.ufmg.br:80/geoserver/wms?SERVICE=WMS&amp;"></OnlineResource>
+						</Get>
+					</HTTP>
+				</DCPType>
+			</GetStyles>
+		</Request>
+		<Exception>
+			<Format>application/vnd.ogc.se_xml</Format>
+			<Format>application/vnd.ogc.se_inimage</Format>
+		</Exception>
+		<VendorSpecificCapabilities>
+			<TileSet>
+				<SRS>EPSG:4326</SRS>
+				<BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"></BoundingBox>
+				<Resolutions>0.703125 0.3515625 0.17578125 0.087890625 0.0439453125 0.02197265625 0.010986328125 0.0054931640625 0.00274658203125 0.001373291015625 6.866455078125E-4 3.4332275390625E-4 1.71661376953125E-4 8.58306884765625E-5 4.291534423828125E-5 2.1457672119140625E-5 1.0728836059570312E-5 5.364418029785156E-6 2.682209014892578E-6 1.341104507446289E-6 6.705522537231445E-7 3.3527612686157227E-7</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:rios_principais</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:900913</SRS>
+				<BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"></BoundingBox>
+				<Resolutions>156543.03390625 78271.516953125 39135.7584765625 19567.87923828125 9783.939619140625 4891.9698095703125 2445.9849047851562 1222.9924523925781 611.4962261962891 305.74811309814453 152.87405654907226 76.43702827453613 38.218514137268066 19.109257068634033 9.554628534317017 4.777314267158508 2.388657133579254 1.194328566789627 0.5971642833948135 0.29858214169740677 0.14929107084870338 0.07464553542435169 0.037322767712175846 0.018661383856087923 0.009330691928043961 0.004665345964021981 0.0023326729820109904 0.0011663364910054952 5.831682455027476E-4 2.915841227513738E-4 1.457920613756869E-4</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:rios_principais</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:4326</SRS>
+				<BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"></BoundingBox>
+				<Resolutions>0.703125 0.3515625 0.17578125 0.087890625 0.0439453125 0.02197265625 0.010986328125 0.0054931640625 0.00274658203125 0.001373291015625 6.866455078125E-4 3.4332275390625E-4 1.71661376953125E-4 8.58306884765625E-5 4.291534423828125E-5 2.1457672119140625E-5 1.0728836059570312E-5 5.364418029785156E-6 2.682209014892578E-6 1.341104507446289E-6 6.705522537231445E-7 3.3527612686157227E-7</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:regioes_de_influencia_1000_m</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:900913</SRS>
+				<BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"></BoundingBox>
+				<Resolutions>156543.03390625 78271.516953125 39135.7584765625 19567.87923828125 9783.939619140625 4891.9698095703125 2445.9849047851562 1222.9924523925781 611.4962261962891 305.74811309814453 152.87405654907226 76.43702827453613 38.218514137268066 19.109257068634033 9.554628534317017 4.777314267158508 2.388657133579254 1.194328566789627 0.5971642833948135 0.29858214169740677 0.14929107084870338 0.07464553542435169 0.037322767712175846 0.018661383856087923 0.009330691928043961 0.004665345964021981 0.0023326729820109904 0.0011663364910054952 5.831682455027476E-4 2.915841227513738E-4 1.457920613756869E-4</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:regioes_de_influencia_1000_m</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:4326</SRS>
+				<BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"></BoundingBox>
+				<Resolutions>0.703125 0.3515625 0.17578125 0.087890625 0.0439453125 0.02197265625 0.010986328125 0.0054931640625 0.00274658203125 0.001373291015625 6.866455078125E-4 3.4332275390625E-4 1.71661376953125E-4 8.58306884765625E-5 4.291534423828125E-5 2.1457672119140625E-5 1.0728836059570312E-5 5.364418029785156E-6 2.682209014892578E-6 1.341104507446289E-6 6.705522537231445E-7 3.3527612686157227E-7</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:temperatura</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:900913</SRS>
+				<BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"></BoundingBox>
+				<Resolutions>156543.03390625 78271.516953125 39135.7584765625 19567.87923828125 9783.939619140625 4891.9698095703125 2445.9849047851562 1222.9924523925781 611.4962261962891 305.74811309814453 152.87405654907226 76.43702827453613 38.218514137268066 19.109257068634033 9.554628534317017 4.777314267158508 2.388657133579254 1.194328566789627 0.5971642833948135 0.29858214169740677 0.14929107084870338 0.07464553542435169 0.037322767712175846 0.018661383856087923 0.009330691928043961 0.004665345964021981 0.0023326729820109904 0.0011663364910054952 5.831682455027476E-4 2.915841227513738E-4 1.457920613756869E-4</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:temperatura</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:4326</SRS>
+				<BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"></BoundingBox>
+				<Resolutions>0.703125 0.3515625 0.17578125 0.087890625 0.0439453125 0.02197265625 0.010986328125 0.0054931640625 0.00274658203125 0.001373291015625 6.866455078125E-4 3.4332275390625E-4 1.71661376953125E-4 8.58306884765625E-5 4.291534423828125E-5 2.1457672119140625E-5 1.0728836059570312E-5 5.364418029785156E-6 2.682209014892578E-6 1.341104507446289E-6 6.705522537231445E-7 3.3527612686157227E-7</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:humidade</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:900913</SRS>
+				<BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"></BoundingBox>
+				<Resolutions>156543.03390625 78271.516953125 39135.7584765625 19567.87923828125 9783.939619140625 4891.9698095703125 2445.9849047851562 1222.9924523925781 611.4962261962891 305.74811309814453 152.87405654907226 76.43702827453613 38.218514137268066 19.109257068634033 9.554628534317017 4.777314267158508 2.388657133579254 1.194328566789627 0.5971642833948135 0.29858214169740677 0.14929107084870338 0.07464553542435169 0.037322767712175846 0.018661383856087923 0.009330691928043961 0.004665345964021981 0.0023326729820109904 0.0011663364910054952 5.831682455027476E-4 2.915841227513738E-4 1.457920613756869E-4</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:humidade</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:4326</SRS>
+				<BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"></BoundingBox>
+				<Resolutions>0.703125 0.3515625 0.17578125 0.087890625 0.0439453125 0.02197265625 0.010986328125 0.0054931640625 0.00274658203125 0.001373291015625 6.866455078125E-4 3.4332275390625E-4 1.71661376953125E-4 8.58306884765625E-5 4.291534423828125E-5 2.1457672119140625E-5 1.0728836059570312E-5 5.364418029785156E-6 2.682209014892578E-6 1.341104507446289E-6 6.705522537231445E-7 3.3527612686157227E-7</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:regiao_de_lisbo_e_setubal</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:900913</SRS>
+				<BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"></BoundingBox>
+				<Resolutions>156543.03390625 78271.516953125 39135.7584765625 19567.87923828125 9783.939619140625 4891.9698095703125 2445.9849047851562 1222.9924523925781 611.4962261962891 305.74811309814453 152.87405654907226 76.43702827453613 38.218514137268066 19.109257068634033 9.554628534317017 4.777314267158508 2.388657133579254 1.194328566789627 0.5971642833948135 0.29858214169740677 0.14929107084870338 0.07464553542435169 0.037322767712175846 0.018661383856087923 0.009330691928043961 0.004665345964021981 0.0023326729820109904 0.0011663364910054952 5.831682455027476E-4 2.915841227513738E-4 1.457920613756869E-4</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:regiao_de_lisbo_e_setubal</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:4326</SRS>
+				<BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"></BoundingBox>
+				<Resolutions>0.703125 0.3515625 0.17578125 0.087890625 0.0439453125 0.02197265625 0.010986328125 0.0054931640625 0.00274658203125 0.001373291015625 6.866455078125E-4 3.4332275390625E-4 1.71661376953125E-4 8.58306884765625E-5 4.291534423828125E-5 2.1457672119140625E-5 1.0728836059570312E-5 5.364418029785156E-6 2.682209014892578E-6 1.341104507446289E-6 6.705522537231445E-7 3.3527612686157227E-7</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:concelhos</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:900913</SRS>
+				<BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"></BoundingBox>
+				<Resolutions>156543.03390625 78271.516953125 39135.7584765625 19567.87923828125 9783.939619140625 4891.9698095703125 2445.9849047851562 1222.9924523925781 611.4962261962891 305.74811309814453 152.87405654907226 76.43702827453613 38.218514137268066 19.109257068634033 9.554628534317017 4.777314267158508 2.388657133579254 1.194328566789627 0.5971642833948135 0.29858214169740677 0.14929107084870338 0.07464553542435169 0.037322767712175846 0.018661383856087923 0.009330691928043961 0.004665345964021981 0.0023326729820109904 0.0011663364910054952 5.831682455027476E-4 2.915841227513738E-4 1.457920613756869E-4</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:concelhos</Layers>
+				<Styles></Styles>
+			</TileSet>
+		</VendorSpecificCapabilities>
+		<UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"></UserDefinedSymbolization>
+		<Layer>
+			<Layer queryable="1" opaque="0">
+				<Name>GH:rios_principais</Name>
+				<Title>rios_principais</Title>
+				<Abstract>GH:rios_principais ABSTRACT</Abstract>
+				<KeywordList>
+					<Keyword>group:shp::://github.com/mapawebpena/Mapaweb6/releases/download/Map_Download/rios_principais.zip:notListing::maxZoom:7</Keyword>
+				</KeywordList>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox minx="-9.47307143282107" miny="37.85070305636318" maxx="-8.299008162451845" maxy="39.31418148079631"></LatLonBoundingBox>
+				<BoundingBox SRS="EPSG:4326" minx="-115575.68186342847" miny="-200955.70266083372" maxx="-14599.465584621354" maxy="-39297.67271729351"></BoundingBox>
+				<Style>
+					<Name>1</Name>
+					<Title>1</Title>
+					<Abstract></Abstract>
+					<LegendURL width="20" height="20">
+						<Format>image/png</Format>
+						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=rios_principais"></OnlineResource>
+					</LegendURL>
+				</Style>
+			</Layer>
+			<Layer queryable="1" opaque="0">
+				<Name>GH:regioes_de_influencia_1000_m</Name>
+				<Title>regioes_de_influencia_1000_m</Title>
+				<Abstract>GH:regioes_de_influencia_1000_m ABSTRACT</Abstract>
+				<KeywordList>
+					<Keyword>group:shp::://github.com/mapawebpena/Mapaweb6/releases/download/Map_Download/regioes_de_influencia_1000_m.zip:notListing::maxZoom:7</Keyword>
+				</KeywordList>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox minx="-9.494323728051764" miny="37.83632123615086" maxx="-8.2773572715716" maxy="39.326800074920975"></LatLonBoundingBox>
+				<BoundingBox SRS="EPSG:4326" minx="-117388.19362620809" miny="-202526.7305553974" maxx="-12696.571574159832" maxy="-37900.061487532716"></BoundingBox>
+				<Style>
+					<Name>1</Name>
+					<Title>1</Title>
+					<Abstract></Abstract>
+					<LegendURL width="20" height="20">
+						<Format>image/png</Format>
+						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=regioes_de_influencia_1000_m"></OnlineResource>
+					</LegendURL>
+				</Style>
+			</Layer>
+			<Layer queryable="1" opaque="0">
+				<Name>GH:temperatura</Name>
+				<Title>temperatura</Title>
+				<Abstract>GH:temperatura ABSTRACT</Abstract>
+				<KeywordList>
+					<Keyword>group:shp::://github.com/mapawebpena/Mapaweb6/releases/download/Map_Download/temperatura.zip:notListing::maxZoom:7</Keyword>
+				</KeywordList>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox minx="-9.488561805241288" miny="37.75326977756068" maxx="-8.129645978998875" maxy="39.254063264310204"></LatLonBoundingBox>
+				<BoundingBox SRS="EPSG:4326" minx="-117012.30064619072" miny="-211752.67147961896" maxx="298.85572783767657" maxy="-45985.710691904984"></BoundingBox>
+				<Style>
+					<Name>1</Name>
+					<Title>1</Title>
+					<Abstract></Abstract>
+					<LegendURL width="20" height="20">
+						<Format>image/png</Format>
+						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=temperatura"></OnlineResource>
+					</LegendURL>
+				</Style>
+			</Layer>
+			<Layer queryable="1" opaque="0">
+				<Name>GH:humidade</Name>
+				<Title>humidade</Title>
+				<Abstract>GH:humidade ABSTRACT</Abstract>
+				<KeywordList>
+					<Keyword>group:shp::://github.com/mapawebpena/Mapaweb6/releases/download/Map_Download/humidade.zip:notListing::maxZoom:7</Keyword>
+				</KeywordList>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox minx="-9.502842216639278" miny="37.742725156629284" maxx="-8.29271043948881" maxy="39.32300910090231"></LatLonBoundingBox>
+				<BoundingBox SRS="EPSG:4326" minx="-118129.34593375429" miny="-212907.43056026121" maxx="-14065.660438382214" maxy="-38318.59349775037"></BoundingBox>
+				<Style>
+					<Name>1</Name>
+					<Title>1</Title>
+					<Abstract></Abstract>
+					<LegendURL width="20" height="20">
+						<Format>image/png</Format>
+						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=humidade"></OnlineResource>
+					</LegendURL>
+				</Style>
+			</Layer>
+			<Layer queryable="1" opaque="0">
+				<Name>GH:regiao_de_lisbo_e_setubal</Name>
+				<Title>regiao_de_lisbo_e_setubal</Title>
+				<Abstract>GH:regiao_de_lisbo_e_setubal ABSTRACT</Abstract>
+				<KeywordList>
+					<Keyword>group:shp::://github.com/mapawebpena/Mapaweb6/releases/download/Map_Download/regiao_de_lisbo_e_setubal.zip:notListing::maxZoom:7</Keyword>
+				</KeywordList>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox minx="-9.510849553291175" miny="37.74263579345854" maxx="-8.129642576666596" maxy="39.3231233303518"></LatLonBoundingBox>
+				<BoundingBox SRS="EPSG:4326" minx="-118820.10544072984" miny="-212907.43056026121" maxx="298.85572783767657" maxy="-38318.59349775037"></BoundingBox>
+				<Style>
+					<Name>1</Name>
+					<Title>1</Title>
+					<Abstract></Abstract>
+					<LegendURL width="20" height="20">
+						<Format>image/png</Format>
+						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=regiao_de_lisbo_e_setubal"></OnlineResource>
+					</LegendURL>
+				</Style>
+			</Layer>
+			<Layer queryable="1" opaque="0">
+				<Name>GH:concelhos</Name>
+				<Title>concelhos</Title>
+				<Abstract>GH:concelhos ABSTRACT</Abstract>
+				<KeywordList>
+					<Keyword>group:shp::://github.com/mapawebpena/Mapaweb6/releases/download/Map_Download/concelhos.zip:notListing::maxZoom:7</Keyword>
+				</KeywordList>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox minx="-9.57499169212091" miny="36.948043518988094" maxx="-6.172816052129182" maxy="42.15433466376233"></LatLonBoundingBox>
+				<BoundingBox SRS="EPSG:4326" minx="-119190.28852814653" miny="-300403.3008365815" maxx="162064.56559012807" maxy="276085.50532542967"></BoundingBox>
+				<Style>
+					<Name>1</Name>
+					<Title>1</Title>
+					<Abstract></Abstract>
+					<LegendURL width="20" height="20">
+						<Format>image/png</Format>
+						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=concelhos"></OnlineResource>
+					</LegendURL>
+				</Style>
+			</Layer>
+		</Layer>
+	</Capability>
+</WMT_MS_Capabilities>
